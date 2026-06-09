@@ -26,7 +26,7 @@ jobs:
       - name: Build Image
         run: |
           docker build -t ghcr.io/lorecami/examen-devops:2.0.0 .
-          docker tag ghcr.io/lorecami/examen-devops:1.0.0 ghcr.io/lorecami/examen-devops:latest
+          docker tag ghcr.io/lorecami/examen-devops:2.0.0 ghcr.io/lorecami/examen-devops:latest
 
       - name: Push Image
         run: |
