@@ -6,7 +6,7 @@ import time
 app = Flask(__name__)
 
 APP_NAME = os.getenv("APP_NAME", "Mi Aplicacion")
-VERSION = os.getenv("VERSION", "1.0.0")
+VERSION = os.getenv("VERSION", "2.0.0")
 
 DB_HOST = os.getenv("DB_HOST")
 DB_NAME = os.getenv("DB_NAME")
