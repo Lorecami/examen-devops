@@ -1,5 +1,3 @@
-version: '3.9'
-
 services:
 
   db:
@@ -11,15 +9,14 @@ services:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin123
 
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
     ports:
       - "5432:5432"
 
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
   pgadmin:
     image: dpage/pgadmin4
-
     container_name: pgadmin
 
     environment:
@@ -36,7 +33,6 @@ services:
       - pgadmin_data:/var/lib/pgadmin
 
   flask-app:
-
     build: .
 
     container_name: flask_app
